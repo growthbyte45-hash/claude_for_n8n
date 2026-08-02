@@ -1,0 +1,17 @@
+{
+  "name": "claude-code-mcp-render",
+  "version": "1.0.0",
+  "description": "HTTP/SSE MCP server wrapping headless Claude Code, deployable on Render, connectable from n8n's MCP Client node",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "express": "^4.19.2"
+  }
+}

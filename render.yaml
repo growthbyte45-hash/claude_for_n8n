@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: claude-code-mcp
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false      # set manually in Render dashboard (secret)
+      - key: MCP_AUTH_TOKEN
+        sync: false      # set manually in Render dashboard (secret) — this protects your /mcp endpoint
+      - key: PORT
+        value: 3000
+    healthCheckPath: /health

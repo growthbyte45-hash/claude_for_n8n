@@ -2,7 +2,7 @@ services:
   - type: web
     name: claude-code-mcp
     runtime: docker
-    plan: starter
+    plan: free
     dockerfilePath: ./Dockerfile
     envVars:
       - key: ANTHROPIC_API_KEY
